@@ -13,7 +13,7 @@ public class AwsSecretsConfig {
     public SecretsManagerClient secretsManagerClient() {
         return SecretsManagerClient.builder()
                 .region(Region.AP_SOUTH_1)
-                .build();
+                .build(); // <-- NO credentials here
     }
 
     @Bean

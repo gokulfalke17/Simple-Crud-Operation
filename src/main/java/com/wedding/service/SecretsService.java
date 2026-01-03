@@ -26,4 +26,6 @@ public class SecretsService {
         // This will now ignore unknown fields like "engine"
         return objectMapper.readValue(response.secretString(), DbSecret01.class);
     }
+
+
 }
