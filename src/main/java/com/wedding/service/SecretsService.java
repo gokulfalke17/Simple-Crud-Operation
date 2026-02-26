@@ -18,12 +18,11 @@ public class SecretsService {
     public DbSecret01 getDbSecret() throws Exception {
 
         GetSecretValueRequest request = GetSecretValueRequest.builder()
-                .secretId("DbSecret-01")  // Your secret name
+                .secretId("DbSecret-01")
                 .build();
 
         GetSecretValueResponse response = secretsManagerClient.getSecretValue(request);
 
-        // This will now ignore unknown fields like "engine"
         return objectMapper.readValue(response.secretString(), DbSecret01.class);
     }
 

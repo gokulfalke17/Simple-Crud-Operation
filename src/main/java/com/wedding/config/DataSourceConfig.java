@@ -27,7 +27,7 @@ public class DataSourceConfig {
                 db.getUsername() == null ||
                 db.getPassword() == null) {
 
-            throw new RuntimeException("❌ DbSecret-01 is missing required fields");
+            throw new RuntimeException("DbSecret-01 is missing required fields");
         }
 
         HikariDataSource ds = new HikariDataSource();
