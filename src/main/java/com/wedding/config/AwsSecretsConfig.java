@@ -21,3 +21,16 @@ public class AwsSecretsConfig {
         return new ObjectMapper();
     }
 }
+
+
+/*
+oper Push →
+CI Build →
+Unit Tests →
+SonarQube Code Quality →
+Build Docker →
+Push to Docker Registry →
+Deploy to Kubernetes →
+Rolling Update →
+Monitor via Prometheus
+*/
